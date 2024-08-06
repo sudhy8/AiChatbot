@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMailReply } from "@fortawesome/free-solid-svg-icons";
 
 import { HfInference } from "@huggingface/inference";
-const TEST_USER_INFO = { firstName: "Test", lastName: "User" };
+const TEST_USER_INFO = { firstName: "Sudhy", lastName: "S" };
 function App() {
   const [isQuerying, setIsQuerying] = useState<boolean>(false);
 
@@ -41,7 +41,7 @@ function App() {
 
   const aifun = async (value: string) => {
     let fullResponse = "";
-    const inference = new HfInference("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");
+    const inference:any = new HfInference("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");
 
     for await (const chunk of inference.chatCompletionStream({
       model: "microsoft/Phi-3-mini-4k-instruct",
