@@ -14,20 +14,8 @@ function App() {
       id: "1",
       role: MessageRole.ASSISTANT,
       message:
-        "I am a sample chat ui made by Kevin Wong (@pragmaticgeek).  This is a demo on how to build a simple React chat ui from scratch.",
-    },
-    {
-      id: "2",
-      role: MessageRole.USER,
-      message: "Amazing. where's the code?",
-      userInfo: TEST_USER_INFO,
-    },
-    {
-      id: "3",
-      role: MessageRole.ASSISTANT,
-      message:
-        "The code is located here: https://github.com/pragmaticgeek/react-simple-chatbot-ui-demo",
-    },
+        "I am your Job assistance bot. How can I help you today?",
+    }
   ]);
 
   const handleSubmit = useCallback((value: string) => {
@@ -58,7 +46,7 @@ function App() {
     <ChatUI
       isQuerying={isQuerying}
       onSubmit={handleSubmit}
-      placeholder="Type here to interact with this demo"
+      placeholder="Type here..."
       disabled={isQuerying}
       conversations={chatConversations}
       customSubmitIcon={<FontAwesomeIcon icon={faMailReply} />}

@@ -1,5 +1,4 @@
-# React Simple Chatbot UI Demo by @pragmaticgeek
-
+# React Simple Chatbot UI Demo 
 
 ## To run the project
 
