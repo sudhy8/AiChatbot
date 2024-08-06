@@ -38,7 +38,6 @@ function App() {
   //   return result;
   // }
 
-
   const aifun = async (value: string) => {
     let fullResponse = "";
     const inference:any = new HfInference("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");
